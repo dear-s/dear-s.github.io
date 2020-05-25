@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stephen Hannon</title>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=1">
+	<link rel="manifest" href="./site.webmanifest?v=1">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg?v=1" color="#0071bc">
+	<link rel="shortcut icon" href="./favicon.ico?v=1">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Hind:400,600" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="background-fixed" id="spinner-container"></div>
+	
+	<header class="solid-bg leftright-spacing">
+		<h1 class="logo-heading">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.89 160" class="sh-logo">
+				<path fill="none" stroke="#000" stroke-linecap="round" stroke-width="10" d="M45.94,5a184.2,184.2,0,0,0-26,48c-10,28-21,64-11,67s16.73-22.77,22-33c8.5-16.5,22.2-28.34,41-24,19.5,4.5,25.5,29.5,20,51-5.36,21-28,41-28,41"/>
+			</svg>
+		</h1>
+		
+		<nav>
+			<ul class="flat-list">
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#resume">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="intro">
+		<div class="wrapper intro-wrapper leftright-spacing">
+			<h2 class="intro-header">Hello, I’m Stephen Hannon.</h2>
+			<p class="intro-sentence">
+				I’m a <mark>computer science</mark> student at the University of Notre&nbsp;Dame, with interests in <mark>front-end development</mark> and <mark>UI/UX&nbsp;design</mark>.
+			</p>
+		</div>
+	</section>
+	
+	<section id="projects" class="solid-bg">
+		<div class="wrapper">
+			<h2 class="leftright-spacing">My Projects</h2>
+
+			<div class="card-wide leftright-spacing">
+				<div class="card-image">
+					<a href="https://stephen-hannon.github.io/flexible">
+						<img src="./assets/flexible-500x300.png">
+					</a>
+				</div>
+				
+				<div class="card-content">
+					<h3><a href="https://stephen-hannon.github.io/flexible">Flexible</a></h3>
+					<p>I created a web application for Notre Dame students to monitor and plan responsible spending of their Flex Points (pre-paid money usable at campus restaurants). Students import their usage history, and the app generates a chart displaying spending over the semester.</p>
+					<ul class="flat-list chips-list">
+						<li>HTML</li>
+						<li>Vue.js</li>
+						<li>SCSS</li>
+						<li>JavaScript</li>
+						<li>HighCharts</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="card-wide leftright-spacing">
+				<div class="card-image">
+					<a href="https://brick-a-pic.github.io/brick-a-pic">
+						<img src="./assets/brick-a-pic-500x300.png">
+					</a>
+				</div>
+				
+				<div class="card-content">
+					<h3><a href="https://brick-a-pic.github.io/brick-a-pic">Brick a Pic</a></h3>
+					<p>As part of my Open Source Software Development class, my team created a web app that takes an image and converts it to a Lego mosaic. We wanted to build an easy-to-use, highly configurable interface while adhering to open-source development practices.</p>
+					<ul class="flat-list chips-list">
+						<li>HTML</li>
+						<li>Vue.js</li>
+						<li>SCSS</li>
+						<li>Vuetify</li>
+						<li>JavaScript</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="card-wide leftright-spacing">
+				<div class="card-image">
+					<a href="https://github.com/rkarim0598/np-compete">
+						<img src="./assets/np-compete-500x300.png">
+					</a>
+				</div>
+				
+				<div class="card-content">
+					<h3><a href="https://github.com/rkarim0598/np-compete">NP Compete</a></h3>
+					<p>For the 2019 IrishHacks hackathon, my team created a proof-of-concept web app to allow local nonprofits to raise money from donations in the form of votes. The app shows each organization's votes and donations in real time.</p>
+					<ul class="flat-list chips-list">
+						<li>HTML</li>
+						<li>Vue.js</li>
+						<li>Firebase</li>
+						<li>JavaScript</li>
+						<li>CSS</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="card-wide leftright-spacing">
+				<div class="card-image">
+					<a>
+						<img src="./assets/bminor-500x300.png">
+					</a>
+				</div>
+				
+				<div class="card-content">
+					<h3><span title="This code is not publicly available. Contact me directly if you want to see it.">B Minor</span></h3>
+					<p>For my Compilers and Language Design course, we spent the semester writing a full compiler for a C-like programming language called B Minor with first-class strings, optional type inference, and strict typing. The compiler comes with pretty-printing, type-checking, and x86 assembly code generation.</p>
+					<ul class="flat-list chips-list">
+						<li>C</li>
+						<li>Flex</li>
+						<li>Bison</li>
+						<li>x86</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="card-wide leftright-spacing">
+				<div class="card-image">
+					<a href="https://github.com/player13245/elevator-control">
+						<img src="./assets/elevator-picker-500x300.png">
+					</a>
+				</div>
+				
+				<div class="card-content">
+					<h3><a href="https://github.com/player13245/elevator-control">Elevator Control</a></h3>
+					<p>As part of a semester-long project for Introduction to Engineering II, my group created a simulator for the mechanics and usage of a group of elevators. We developed two algorithms to determine which car would be most efficient in response to a person pressing a button to call an elevator.</p>
+					<ul class="flat-list chips-list">
+						<li>MATLAB</li>
+						<li>MATLAB UI</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="card-wide leftright-spacing">
+				<div class="card-image">
+					<a href="https://github.com/stephen-hannon/arduino-simon">
+						<img src="./assets/arduino-simon-500x300.jpg">
+					</a>
+				</div>
+				
+				<div class="card-content">
+					<h3><a href="https://github.com/stephen-hannon/arduino-simon">Arduino Simon</a></h3>
+					<p>In a partner project in Introduction to Embedded Systems, we implemented the popular memory game Simon using the Arduino microcontroller. The physical build featured LEDs, buttons, and a rudimentary speaker, and the logic was constructed using C.</p>
+					<ul class="flat-list chips-list">
+						<li>C</li>
+						<li>Arduino</li>
+						<li>Electrical engineering</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="resume">
+		<div class="wrapper leftright-spacing">
+			<p class="primary-text">Like what you see?</p>
+			<p class="primary-link"><a href="./assets/resume.pdf" target="_blank">See my resume <i class="fas fa-angle-double-right" aria-hidden="true"></i></a></p>
+		</div>
+	</section>
+	
+	<footer id="contact" class="footer solid-bg">
+		<div class="wrapper leftright-spacing">
+			<p>&copy; 2020 Stephen Hannon &bull; Contact me: <a href="mailto:shannon3@nd.edu">shannon3@nd.edu</a></p>
+
+			<ul class="flat-list icon-list">
+				<li><a href="https://www.linkedin.com/in/stephen-hannon/" aria-label="LinkedIn" title="LinkedIn" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a></li>
+				<li><a href="https://github.com/stephen-hannon/" aria-label="GitHub" title="GitHub" target="_blank">
+					<i class="fab fa-github"></i>
+				</a></li>
+				<li><a href="https://behance.net/stephen-hannon/" aria-label="Behance" title="Behance" target="_blank">
+					<i class="fab fa-behance"></i>
+				</a></li>
+				<li><a href="https://codepen.io/stephen-hannon/" aria-label="CodePen" title="CodePen" target="_blank">
+					<i class="fab fa-codepen"></i>
+				</a></li>
+			</ul>
+		</div>		
+	</footer>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126257561-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-126257561-1');
+	</script>
+	
+	<script src="scripts/spinner.js"></script>
+</body>
+</html>

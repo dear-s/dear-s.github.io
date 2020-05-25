@@ -1,0 +1,248 @@
+html {
+	font-size: 62.5%; /* https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97 */
+	scroll-behavior: smooth; /* support is not great, but this is just for presentation */
+}
+@media screen and (max-width: 1000px) {
+	html {
+		font-size: 54.69%; /* 1/1.6 * 1.4/1.6 */
+	}
+}
+@media screen and (max-width: 700px) {
+	html {
+		font-size: 46.878%; /* 1/1.6 * 1.2/1.6 */
+	}
+}
+body {
+	margin: 0;
+	font-size: 1.8rem;
+	font-family: Hind, 'Gill Sans', Tahoma, sans-serif;
+	color: #fff;
+}
+
+.background-fixed {
+	background-color: #444;
+	position: fixed;
+	overflow: hidden;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 4rem 0;
+	box-sizing: border-box;
+}
+
+.flat-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.flat-list > li {
+	display: inline-block;
+}
+
+.icon-list {
+	margin: 2rem 0;
+}
+.icon-list li {
+	margin: 0 1rem;
+}
+.icon-list li a {
+	display: inline-flex;
+	width: 4rem;
+	height: 4rem;
+	border: 2px solid #fff;
+	align-items: center;
+	justify-content: center;
+}
+.icon-list li a:hover {
+	background-color: #fff;
+	color: #0071bc;
+	text-decoration: none;
+}
+
+.chips-list li {
+	border: 1px solid;
+	border-radius: 7rem;
+	font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
+	font-size: 1.4rem;
+	text-transform: lowercase;
+	padding: 0.4rem 0.8rem;
+	margin-right: 0.8rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2 {
+	font-family: 'Patua One', Georgia, serif;
+}
+h2 {
+	margin: 1.5rem 0;
+	font-size: 3.5rem;
+	letter-spacing: .2rem;
+}
+h3 {
+	font-size: 2.5rem;
+}
+hr {
+	margin: 5rem 0;
+}
+
+.leftright-spacing {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+	background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #037293 50%);
+}
+
+.solid-bg {
+	background-color: #fff;
+	color: #444;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5rem;
+}
+.logo-heading {
+	flex: 0 0;
+	margin: 0.2em;
+	line-height: 0;
+}
+.logo-heading svg {
+	height: 10rem;
+}
+
+nav,
+header::before {
+	flex: 1;
+	content: "";
+	text-align: right;
+}
+@media screen and (max-width: 900px) {
+	/* let the logo go to the left to make room on small screens */
+	header::before {
+		content: initial;
+	}
+}
+
+nav a {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.15rem;
+	padding: 1rem 2rem;
+	border-bottom: 2px solid transparent;
+}
+nav a:hover {
+	border-bottom-color: #0071bc;
+	text-decoration: none;
+}
+
+.intro-header {
+	margin: 8rem 0;
+	font-size: 5rem;
+}
+.intro-sentence {
+	font-size: 3.5rem;
+	margin: 4rem 0;
+	width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+	.intro-sentence {
+		width: initial;
+	}
+}
+
+
+.card-wide {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 4rem -0.5rem;
+}
+.card-image,
+.card-content {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.card-wide:nth-of-type(even) {
+	flex-wrap: wrap-reverse;
+}
+.card-wide:nth-of-type(even) .card-image {
+	order: 1;
+}
+.card-image {
+	flex: 1;
+	margin: auto;
+}
+.card-image a {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	min-width: 300px;
+	margin: auto 0;
+}
+.card-image a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #000;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+}
+.card-image a:hover::before {
+	opacity: 0.75;
+}
+.card-image img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+.card-content {
+	flex: 1;
+	min-width: 300px;
+}
+.card-wide h3 {
+	margin: 0;
+}
+
+.primary-text {
+	text-align: center;
+	font-size: 2.4rem;
+}
+.primary-link {
+	text-align: center;
+	font-weight: 700;
+	font-size: 3.2rem;
+}
+
+.footer {
+	background-color: #0071bc;
+	color: #fff;
+	text-align: center;
+}
+.footer p {
+	margin: 1rem 0;
+}
